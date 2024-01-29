@@ -1,9 +1,8 @@
 <script>
+	import './styles.css';
 	let name = 'moh';
 </script>
 
-<div class="app">
-	<h1>Hello ,{name}</h1>
-</div>
+<div id="app"></div>
 
 <slot />
