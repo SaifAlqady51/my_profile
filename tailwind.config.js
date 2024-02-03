@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        "V":["VT323"]
+        "V":["VT323"],
+        'press-start': ['"Press Start 2P"', 'cursive'],
+
       }
     },
   },
