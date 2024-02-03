@@ -194,3 +194,50 @@ body {
     animation-delay: 1.3s;
 
 } 
+
+/* #name {
+    position: relative;
+    width: max-content;
+}
+
+#name::before,#name::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#name::before {
+    animation: typewriter 1.4s steps(11)  forwards;
+    background: inherit;
+
+
+}
+
+@keyframes typewriter {
+   to {left:100%} 
+} */
+
+#name {
+    border-right: 5px  solid ;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    overflow: hidden;
+    width:max-content;
+
+    animation: 
+        typing 3s steps(22), cursor .4s step-end infinite alternate ;
+}
+
+@keyframes cursor {
+    50% {
+        border-color:transparent
+    }
+}
+
+@keyframes typing {
+    from {width:0}
+    to {width:100%}
+}
