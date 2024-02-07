@@ -4,14 +4,18 @@
 	import FaBrandsGithubAlt from 'svelte-icons-pack/fa/FaBrandsGithubAlt';
 </script>
 
-<div class="w-full h-full flex justify-center items-center font-press-start">
+<div class="w-screen h-screen flex justify-center items-center font-press-start">
 	<Navbar />
 	<!-- <div class="flex w-fit h-full z-40 justify-between gap-20"> -->
 	<div>
-		<h1 id="name" class="  text-5xl text-white font-semibold h-16 flex items-center px-2">
+		<h1
+			id="name"
+			class="  md:text-5xl text-xl text-white font-semibold h-16 flex items-center px-4 overflow-auto"
+		>
 			Hello, My name is Saif
 		</h1>
 	</div>
+	<!-- Github Link -->
 	<a
 		href="https://github.com/SaifAlqady51/"
 		target="_blank"
