@@ -2,7 +2,9 @@
 	import NavbarLink from '$lib/navbar/NavbarLink.svelte';
 </script>
 
-<div class="fixed top-0 left-0 h-20 w-full justify-center py-8 text-white gap-40 flex text-xl z-50">
+<div
+	class="w-screen px-2 fixed top-0 left-0 h-20 justify-center pt-6 text-white gap-40 md:flex text-xl z-50 hidden"
+>
 	<div class="flex gap-20">
 		<NavbarLink linkName={'About'} link={'/'} />
 		<NavbarLink linkName={'Projects'} link={'/'} />
