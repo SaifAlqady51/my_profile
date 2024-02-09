@@ -4,8 +4,7 @@
 	import FaBrandsGithubAlt from 'svelte-icons-pack/fa/FaBrandsGithubAlt';
 </script>
 
-<div class="w-screen h-screen flex justify-center items-center font-press-start">
-	<Navbar />
+<div class="w-screen h-screen flex justify-center items-center">
 	<!-- <div class="flex w-fit h-full z-40 justify-between gap-20"> -->
 	<div>
 		<h1
