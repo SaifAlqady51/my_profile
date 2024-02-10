@@ -1,7 +1,25 @@
 <script lang="ts">
-	import Navbar from '$lib/navbar/Navbar.svelte';
-	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import FaBrandsGithubAlt from 'svelte-icons-pack/fa/FaBrandsGithubAlt';
+	let greetingSentence = 'Hello, My name is Saif';
+	let typedChar = '';
+
+	const addCharTotypedChar = (char: string) => {
+		typedChar += char;
+		return typedChar;
+	};
+
+	const addChartoStrigAfterOneSec = (sentence: string, i: number) => {
+		setTimeout(() => {
+			return addCharTotypedChar(sentence[i]);
+		}, i * 120);
+	};
+
+	export const animateTyping = (sentence: string) => {
+		for (let i = 0; i < sentence.length; i++) {
+			addChartoStrigAfterOneSec(sentence, i);
+		}
+	};
+
+	animateTyping(greetingSentence);
 </script>
 
 <div class="w-screen h-screen flex justify-center items-center">
@@ -9,24 +27,9 @@
 	<div>
 		<h1
 			id="name"
-			class="  md:text-5xl text-xl text-white font-semibold h-16 flex items-center px-4 overflow-auto"
+			class="  md:text-5xl text-xl text-white font-semibold h-16 flex items-center px-4 overflow-auto font-press-start"
 		>
-			Hello, My name is Saif
+			{typedChar}
 		</h1>
 	</div>
-	<!-- Github Link -->
-	<a
-		href="https://github.com/SaifAlqady51/"
-		target="_blank"
-		class="absolute bottom-10 left-10 hover:bg-[#415a77] rounded-full p-5"
-	>
-		<Icon
-			src={FaBrandsGithubAlt}
-			color="white"
-			size="64"
-			className="custom-icon"
-			title="Custom icon params"
-		/>
-	</a>
-	<!-- </div> -->
 </div>
