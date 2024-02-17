@@ -3,6 +3,6 @@
 	export let link: string;
 </script>
 
-<div class="cursor-pointer">
-	<a href={link}>{linkName}</a>
+<div>
+	<a class="  cursor-pointer" href={link}>{linkName}</a>
 </div>
