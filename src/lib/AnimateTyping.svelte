@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import FaWindowMinimize from 'svelte-icons-pack/fa/FaWindowMinimize';
-
 	export let sentence: string;
 	let typedChar = '';
 
