@@ -7,7 +7,7 @@
 >
 	<div class="flex gap-20">
 		<NavbarLink linkName={'About'} link={'/about'} />
-		<NavbarLink linkName={'Projects'} link={'/'} />
+		<NavbarLink linkName={'Projects'} link={'/projects'} />
 		<NavbarLink linkName={'Work'} link={'/'} />
 	</div>
 	<div class="flex gap-10">
