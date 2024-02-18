@@ -21,6 +21,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "8.56.0",
+		"@types/nodemailer": "^6.4.14",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.17",
@@ -40,6 +41,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"nodemailer": "^6.9.9",
+		"svelte-email": "^0.0.4",
 		"svelte-icons-pack": "^2.1.0"
 	}
 }
