@@ -11,6 +11,6 @@
 		<NavbarLink linkName={'Work'} link={'/work'} />
 	</div>
 	<div class="flex gap-10">
-		<NavbarLink linkName={'Contact'} link={'/'} />
+		<NavbarLink linkName={'Contact'} link={'/contact'} />
 	</div>
 </div>
