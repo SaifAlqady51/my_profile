@@ -8,12 +8,10 @@ export const actions = {
             const formData = await request.formData();
             const email = formData.get("from") as string
             const body = formData.get("body") as string
-            console.log(email);
 
             const emailHtml = render({
                 template: Hello,
                 props: {
-                    name:"Svelte",
                     email:email,
                     body: body,
                 }

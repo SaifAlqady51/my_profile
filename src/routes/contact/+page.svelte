@@ -1,23 +1,36 @@
 <script lang="ts">
 	export let form;
+	import Icon from 'svelte-icons-pack';
+	import AiFillLinkedin from 'svelte-icons-pack/ai/AiFillLinkedin';
+	import AiFillTwitterSquare from 'svelte-icons-pack/ai/AiFillTwitterSquare';
+	import AiFillMediumSquare from 'svelte-icons-pack/ai/AiFillMediumSquare';
 </script>
 
 <div class="h-screen w-screen flex justify-center items-center z-10 text-white">
-	<fieldset class="flex flex-col items-center justify-center w-full gap-6">
-		<h2 class="font-press-start text-xl">Send a message to me</h2>
+	<fieldset class="flex flex-col items-center justify-center w-full">
+		<h2 class="font-press-start text-3xl mb-8">Send a message to me</h2>
 		<form method="POST" class="container flex flex-col items-center gap-12 w-1/3">
+			<div class="relative w-full">
+				<input
+					name="to"
+					type="text"
+					value="To: saifalqady52@gmail.com"
+					placeholder="johndoe@example.com"
+					class="rounded-full w-full h-[40px] px-4 focus:outline-none text-black font-V text-2xl bg-[#a2c4c9] placeholder-gray-500"
+					readonly
+				/>
+			</div>
 			<div class="relative w-full">
 				<input
 					name="from"
 					type="email"
 					placeholder="johndoe@example.com"
-					class="rounded-full w-full h-[40px] px-4 focus:outline-none text-black font-V text-2xl bg-[#a2c4c9] placeholder-gray-500"
+					class="rounded-full w-full h-[40px] px-4 pl-[66px] focus:outline-none text-black font-V text-2xl bg-[#a2c4c9] placeholder-gray-500"
 					required
 				/>
-				<!-- <p class="input-error absolute -bottom-8 left-10 text-xl font-V text-[#ff5a5f]">
-					{form?.emailError || ''}
-				</p> -->
+				<p class="absolute top-1 font-V left-4 text-black text-2xl">From:</p>
 			</div>
+
 			<div class="relative w-full">
 				<textarea
 					name="body"
@@ -27,9 +40,9 @@
 					required
 				/>
 
-				<!-- <p class="input-error absolute -bottom-8 left-10 text-xl font-V text-[#ff5a5f]">
-					{form?.bodyError || ''}
-				</p> -->
+				<p class="input-error absolute -bottom-8 left-10 text-xl font-V text-green-500">
+					{form?.success || ''}
+				</p>
 			</div>
 			<button
 				type="submit"
@@ -37,5 +50,35 @@
 				>Send</button
 			>
 		</form>
+		<div class="flex gap-20 absolute bottom-24">
+			<a href="https://www.linkedin.com/in/saif-alqady-098642237/" target="_blank">
+				<Icon
+					src={AiFillLinkedin}
+					color="white"
+					size="76"
+					className="custom-icon"
+					title="Custom icon params"
+				/>
+			</a>
+			<a href="https://twitter.com/saif_alqady">
+				<Icon
+					src={AiFillTwitterSquare}
+					color="white"
+					size="76"
+					className="custom-icon"
+					title="Custom icon params"
+				/>
+			</a>
+
+			<a href="https://medium.com/@saifalqady52">
+				<Icon
+					src={AiFillMediumSquare}
+					color="white"
+					size="76"
+					className="custom-icon"
+					title="Custom icon params"
+				/>
+			</a>
+		</div>
 	</fieldset>
 </div>
