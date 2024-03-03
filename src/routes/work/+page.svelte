@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="h-screen w-screen flex flex-col items-center mt-40 font-press-start z-30">
+<div class="h-screen w-screen flex flex-col items-center mt-40 font-press-start">
 	<div class="flex flex-col w-fit items-center">
 		<div class="flex gap-10 items-center h-fit text-2xl text-white">
 			<h4 class="w-80">December 2023</h4>

@@ -6,9 +6,9 @@
 	import AiFillMediumSquare from 'svelte-icons-pack/ai/AiFillMediumSquare';
 </script>
 
-<div class="h-screen w-screen flex justify-center items-center z-10 text-white">
-	<fieldset class="flex flex-col items-center justify-center w-full">
-		<h2 class="font-press-start text-3xl mb-8">Send a message to me</h2>
+<div class="h-screen w-screen flex justify-center items-center text-white">
+	<fieldset class="flex flex-col items-center justify-center w-full gap-10">
+		<h2 class="font-press-start text-3xl">Send a message to me</h2>
 		<form method="POST" class="container flex flex-col items-center gap-12 w-1/3">
 			<div class="relative w-full">
 				<input
@@ -50,7 +50,7 @@
 				>Send</button
 			>
 		</form>
-		<div class="flex gap-20 absolute bottom-24">
+		<div class="flex gap-20 mt-8">
 			<a href="https://www.linkedin.com/in/saif-alqady-098642237/" target="_blank">
 				<Icon
 					src={AiFillLinkedin}

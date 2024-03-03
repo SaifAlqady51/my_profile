@@ -13,7 +13,7 @@
 	<a
 		href="https://github.com/SaifAlqady51/"
 		target="_blank"
-		class="absolute bottom-10 left-10 hover:bg-[#415a77] rounded-full p-5 z-20"
+		class="absolute bottom-10 left-10 hover:bg-[#415a77] rounded-full p-5 z-40"
 	>
 		<Icon
 			src={FaBrandsGithubAlt}
