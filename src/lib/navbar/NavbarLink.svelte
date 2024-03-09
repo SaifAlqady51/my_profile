@@ -4,5 +4,5 @@
 </script>
 
 <div>
-	<a class="  cursor-pointer" href={link}>{linkName}</a>
+	<a class="cursor-pointer py-2" href={link}>{linkName}</a>
 </div>

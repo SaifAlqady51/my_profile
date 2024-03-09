@@ -16,6 +16,7 @@
 </script>
 
 <div>
+	<!-- Navbar for wide screens -->
 	<div
 		class="w-screen px-2 fixed top-0 left-0 h-20 justify-center pt-6 text-white gap-40 md:flex text-xl z-50 hidden"
 	>
@@ -28,20 +29,24 @@
 			<NavbarLink linkName={'Contact'} link={'/contact'} />
 		</div>
 	</div>
+	<!-- Nav bar for small screens -->
 	<div class="relateive text-black fixed top-4 left-10 visible md:hidden">
+		<!-- Menu Icon -->
 		<button on:click={toggleVissability}>
 			<Icon
 				src={HiSolidMenu}
 				color="white"
-				size="50"
+				size="40"
 				className="custom-icon"
 				title="Custom icon params"
 			/>
 		</button>
+		<!-- toggled nav links -->
 		{#if visible}
-			<div class=" bg-gray-400 rounded py-2 flex flex-col gap-2 z-50">
+			<div class=" bg-gray-400 rounded py-2 px-6 flex flex-col gap-5 z-50">
 				{#each topNav as item}
-					<button on:click={toggleVissability} class=" cursor-pointer px-4 py-2 hover:bg-gray-100">
+					<!-- Links -->
+					<button on:click={toggleVissability} class=" text-[13px] hover:bg-gray-200">
 						<NavbarLink linkName={item.name} link={item.link} />
 					</button>
 				{/each}
