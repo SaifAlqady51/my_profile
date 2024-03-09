@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="w-screen h-screen md:text-4xl text-xl font-press-start text-white flex flex-col justify-start mt-40 px-20 gap-20"
+	class="w-screen h-screen md:text-4xl text-xl font-press-start text-white flex flex-col justify-start md:mt-40 mt-20 md:px-20 px-4 gap-20 z-10"
 >
 	<Project
 		projectName="Flight booking website (Tayara)"

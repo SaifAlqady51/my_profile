@@ -8,15 +8,15 @@
 	import CgWebsite from 'svelte-icons-pack/cg/CgWebsite';
 </script>
 
-<div class="w-full h-fit flex justify-between">
-	<p>{projectName}</p>
-	<div class="flex gap-16">
+<div class="w-full h-fit flex md:justify-between items-center md:flex-row flex-col gap-4">
+	<p class="md:text-2xl text-sm flex text-center">{projectName}</p>
+	<div class="flex md:gap-16 gap-4">
 		<a href={websiteLink} target="_blank">
 			<Icon
 				src={CgWebsite}
 				color="white"
 				size="64"
-				className="custom-icon"
+				className="custom-icon h-10 md:h-16"
 				title="Custom icon params"
 			/>
 		</a>
@@ -25,7 +25,7 @@
 				src={AiFillGithub}
 				color="white"
 				size="64"
-				className="custom-icon"
+				className="custom-icon  h-10 md:h-16"
 				title="Custom icon params"
 			/>
 		</a>

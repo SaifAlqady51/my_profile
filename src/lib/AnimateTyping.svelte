@@ -22,6 +22,6 @@
 	animateTyping(sentence);
 </script>
 
-<div class="">
+<div>
 	<h1 class="h-fit leading-10 md:leading-[80px]">{typedChar}</h1>
 </div>
