@@ -13,13 +13,13 @@
 	<a
 		href="https://github.com/SaifAlqady51/"
 		target="_blank"
-		class="absolute bottom-10 left-10 hover:bg-[#415a77] rounded-full p-5 z-40"
+		class="absolute md:bottom-10 md:left-10 bottom-2 left-2 hover:bg-[#415a77] rounded-full p-5 z-40"
 	>
 		<Icon
 			src={FaBrandsGithubAlt}
 			color="white"
 			size="64"
-			className="custom-icon"
+			className="custom-icon md:w-16 w-10"
 			title="Custom icon params"
 		/>
 	</a>
