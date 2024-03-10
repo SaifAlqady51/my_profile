@@ -7,16 +7,19 @@
 </script>
 
 <div class="h-screen w-screen flex justify-center items-center text-white">
-	<fieldset class="flex flex-col items-center justify-center w-full gap-10">
-		<h2 class="font-press-start text-3xl">Send a message to me</h2>
-		<form method="POST" class="container flex flex-col items-center gap-12 w-1/3">
-			<div class="relative w-full">
+	<fieldset class="flex flex-col items-center justify-center w-full md:gap-10 gap-4">
+		<h2 class="font-press-start md:text-3xl text-lg mt-12">Send a message to me</h2>
+		<form
+			method="POST"
+			class="  container flex flex-col items-center md:gap-12 md:w-1/3 gap-3 w-10/12"
+		>
+			<div class=" w-full">
 				<input
 					name="to"
 					type="text"
 					value="To: saifalqady52@gmail.com"
 					placeholder="johndoe@example.com"
-					class="rounded-full w-full h-[40px] px-4 focus:outline-none text-black font-V text-2xl bg-[#a2c4c9] placeholder-gray-500"
+					class="relative rounded-full w-full h-[40px] px-4 focus:outline-none text-black font-V text-2xl bg-[#a2c4c9] placeholder-gray-500 -z-10"
 					readonly
 				/>
 			</div>
@@ -50,13 +53,13 @@
 				>Send</button
 			>
 		</form>
-		<div class="flex gap-20 mt-8">
+		<div class="flex md:gap-20 gap-6 md:mt-8">
 			<a href="https://www.linkedin.com/in/saif-alqady-098642237/" target="_blank">
 				<Icon
 					src={AiFillLinkedin}
 					color="white"
 					size="76"
-					className="custom-icon"
+					className="custom-icon md:w-[76px] w-10 h-fit"
 					title="Custom icon params"
 				/>
 			</a>
@@ -65,7 +68,7 @@
 					src={AiFillTwitterSquare}
 					color="white"
 					size="76"
-					className="custom-icon"
+					className="custom-icon  md:w-[76px] w-10 h-fit"
 					title="Custom icon params"
 				/>
 			</a>
@@ -75,7 +78,7 @@
 					src={AiFillMediumSquare}
 					color="white"
 					size="76"
-					className="custom-icon"
+					className="custom-icon  md:w-[76px] w-10 h-fit"
 					title="Custom icon params"
 				/>
 			</a>
